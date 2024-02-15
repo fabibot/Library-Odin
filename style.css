@@ -1,0 +1,28 @@
+thead{
+    font-weight: 800;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: solid 1px;
+    padding: 10px 80px;
+}
+
+th{
+    font-weight: 100;
+}
+
+.formAdd{
+    margin: 50px;
+    padding: 20px;
+    border: dotted 2px;
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.1);
+    visibility: hidden;}
+
+label, #submitButton{
+    margin: 10px 30px;
+}
+
+deleteButton{
+    background-color: blueviolet;
+}
