@@ -8,39 +8,66 @@
 </head>
 <body>
     <h1>Votre bibliothèque </h1>
-    <h3 id = "livresDispo"></h3>
-    
-    <table>
-        <thead>
-            <tr>
-                <td scope="col">Titre</td>
-                <td scope="col">Auteur</td>
-                <td scope="col">Genre</td>
-                <td scope="col">Read status</td>
-                <td scope="col">Delete</td>
-
-
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-
-    <br>
-
-    <button id="addButton" class = "addBookButton">Ajouter un livre</button>
-
-    <div >
-        <form class="formAdd" action="POST">
-            <label for="text">Titre </label><input name="title" type="text" required>
-            <label for="text">Auteur </label><input name="author" type="text" required>
-            <label for="text">Genre </label><input  name="genre" type="text" required>
-            <input id="submitButton" type="submit" value="Valider">
-
+    <div class="form">
+        <form action="POST">
+            <label for="Username">Username</label>
+            <input type="text" minlength="3" maxlength="20"required>
+            <label for="Username">Email</label>
+            <input type="text"  type="email" required>
+            <label for="Username" >Email Confirmation</label>
+            <input type="text" required>
+            <label for="Username" required >Pays</label> 
+            <select id="Country" required>
+                <option value="ch">Suisse</option>
+                <option value="fr">France</option>
+                <option value="de">Allemagne</option>
+                <option value="nl">Pays-Bas</option>
+              </select>
+            <label for="Username" required>Code Postal</label>
+            <input type="text" required>
+            <label for="Username">Mot de passe</label>
+            <input type="text" type="password"  minlength="5" required>
+            <label for="Username">Confirmation Mot de passe</label>
+            <input type="text"  required>
+            <button>Valider</button>
         </form>
+    </div>
+    <div class="home">
+        <h3 id = "livresDispo"></h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <td scope="col">Titre</td>
+                    <td scope="col">Auteur</td>
+                    <td scope="col">Genre</td>
+                    <td scope="col">Read status</td>
+                    <td scope="col">Delete</td>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <br>
+
+        <button id="addButton" class = "addBookButton">Ajouter un livre</button>
+
+        <div >
+            <form class="formAdd" action="POST">
+                <label for="text">Titre </label><input name="title" type="text" required>
+                <label for="text">Auteur </label><input name="author" type="text" required>
+                <label for="text">Genre </label><input  name="genre" type="text" required>
+                <input id="submitButton" type="submit" value="Valider">
+
+            </form>
+        </div>
     </div>
 
     <script src="main.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
