@@ -45,7 +45,7 @@ label, #submitButton{
     margin: 10px 30px;
 }
 
-.deleteButton, .addBookButton{
+.deleteButton, .addBookButton, #submitButton{
     background-color: var(--soft-main-color);
     width: 41px;
     height: 23px;
@@ -54,8 +54,13 @@ label, #submitButton{
 }
 
 .addBookButton{
-    width: 140px;
-    height: 35px;
+    width: 161px;
+    height: 76px;
+}
+
+#submitButton{
+    height: 32px;
+    width: 95px;
 }
 
 .deleteButton:hover{
@@ -124,6 +129,8 @@ input{
     padding: 3px;
     margin-bottom: 20px;
     border-radius: 10px;
+    border: solid 1px black;
+
 }
 
 button, select{
@@ -136,10 +143,14 @@ button, select{
     margin-bottom: 20px;
 }
 
-input:valid{
+.valid{
     border: solid 1px greenyellow;
 }
 
-input:invalid{
+.invalid{
     border: solid 1px red;
+}
+
+.orange{
+    border: solid 1px orange;
 }

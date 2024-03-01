@@ -10,26 +10,25 @@
     <h1>Votre bibliothèque </h1>
     <div class="form">
         <form action="POST">
-            <label for="Username">Username</label>
-            <input type="text" minlength="3" maxlength="20"required>
-            <label for="Username">Email</label>
-            <input type="text"  type="email" required>
-            <label for="Username" >Email Confirmation</label>
-            <input type="text" required>
-            <label for="Username" required >Pays</label> 
-            <select id="Country" required>
-                <option value="ch">Suisse</option>
-                <option value="fr">France</option>
-                <option value="de">Allemagne</option>
-                <option value="nl">Pays-Bas</option>
+            <label for="email">Email</label>
+            <input id="email1" class="connextionForm" type="text"  type="email" required>
+            <label for="email" >Email Confirmation</label>
+            <input id="email2" class="connextionForm" type="text" required>
+            <label for="country" required >Pays</label> 
+            <select id="country"  required>
+                <option value="">-option-</option>
+                <option value="suisse">Suisse</option>
+                <option value="france">France</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="es">espagne</option>
               </select>
-            <label for="Username" required>Code Postal</label>
-            <input type="text" required>
-            <label for="Username">Mot de passe</label>
-            <input type="text" type="password"  minlength="5" required>
-            <label for="Username">Confirmation Mot de passe</label>
-            <input type="text"  required>
-            <button>Valider</button>
+            <label for="postalCode" required>Code Postal</label>
+            <input id="postalCode" class="connextionForm" type="text" required>
+            <label for="password">Mot de passe</label>
+            <input id="password1" class="connextionForm" type="text" type="password"  minlength="5" required>
+            <label for="passowrd">Confirmation Mot de passe</label>
+            <input id="password2" class="connextionForm" type="text"  required>
+            <button id="submitForm">Valider</button>
         </form>
     </div>
     <div class="home">
