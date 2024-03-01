@@ -63,6 +63,11 @@ label, #submitButton{
     width: 95px;
 }
 
+.deleteButton{
+    width: 54px;
+    height: 36px;
+}
+
 .deleteButton:hover{
     background-color: #e3bc60;
 }
